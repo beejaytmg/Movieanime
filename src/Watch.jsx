@@ -65,14 +65,7 @@ const Watch = () => {
                     <p className="text-lg mb-4">{details.overview}</p>
                     {/* Embed video using iframe */}
                     <div className="aspect-w-16 aspect-h-9 mb-4">
-                        <iframe
-                            title={details.title}
-                            className="w-full h-full rounded-lg"
-                            src={embedUrl}
-                            
-                            allowFullScreen
-                            style={{ height: "300px" }} // Adjust height here
-                        ></iframe>
+                        <a href={`https://bijayakumartamang.com.np/src?src=${embedUrl}`}><button className={`text-blue-500 hover:underline focus:outline-none`}>Watch</button></a>
                     </div>
                     {type === 'tv' && (
                         <div>

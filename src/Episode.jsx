@@ -58,14 +58,7 @@ const Episode = () => {
                     <p className="text-lg mb-4">{episodeDetails.overview}</p>
                     {/* Embed video using iframe */}
                     <div className="aspect-w-16 aspect-h-9 mb-4">
-                        <iframe
-                            title={episodeDetails.name}
-                            className="w-full h-full rounded-lg"
-                            src={embedUrl}
-                
-                            style={{ height: "300px" }}
-                            allowFullScreen
-                        ></iframe>
+                    <a href={`https://bijayakumartamang.com.np/src?src=${embedUrl}`}><button className={`text-blue-500 hover:underline focus:outline-none`}>Watch</button></a>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-4">Seasons</h3>
